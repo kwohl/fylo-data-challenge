@@ -14,9 +14,10 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    color: white;
+    font-weight: 400;
+    color: var(--neutral-pale-blue);
     background-color: var(--neutral-very-dark-blue);
     height: 100%;
     position: relative;
@@ -110,6 +111,10 @@ body {
     margin-bottom: 15px;
 }
 
+.content:last-of-type > div:last-of-type span {
+    font-weight: 700;
+}
+
 #storage-bar {
     border-radius: 25px;
     padding: 3px;    
@@ -141,6 +146,7 @@ body {
 
 #storage .flex-row {
     justify-content: space-between;
+    font-weight: 700;
     margin-top: 10px;
 }
 
@@ -155,36 +161,25 @@ body {
     width: 130px;
     height: 70px;
     padding: 0 25px 0 25px;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
+}
+
+#storage-remaining > div:first-of-type {
+    display: flex;
 }
 
 #storage-remaining p {
-    margin-top: 25px;
+    align-items: center;
+    display: flex;
+    font-weight: 700;
 }
 
 #storage-remaining span {
-    font-weight: bold;
     color: black;
-    position: relative;
-}
-
-.s1 {
-    font-size: 2em;
-}
-
-.s2 {
-    font-size: 2.5em;
-}
-
-.s3 {
-    font-size: 2.5em;
-    bottom: -10px;
-}
-
-/* #storage-remaining span:last-of-type {
+    font-size: 40px;
     margin-right: 5px;
-} */
+}
 
 #storage-remaining::before {
     content: "";
