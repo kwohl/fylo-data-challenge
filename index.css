@@ -1,0 +1,213 @@
+:root {
+    --primary-gradient: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --neutral-pale-blue: hsl(243, 100%, 93%);
+    --neutral-grayish-blue: hsl(229, 7%, 55%);
+    --neutral-dark-blue: hsl(228, 56%, 26%);
+    --neutral-very-dark-blue: hsl(229, 57%, 11%);
+    --used-percent: 815%;
+    --available: 1000;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: var(--neutral-very-dark-blue);
+    height: 100%;
+    position: relative;
+}
+
+/* @media only screen and (max-width: 375px) {
+
+  } */
+
+#bg-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* helpers */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* main content container (invisible div) */
+
+#content-container {
+    z-index: 1;
+    position: absolute;
+    align-items: flex-end;
+    margin: auto;
+    bottom: 295px;
+    /* height: 100%; */
+    width: 100%;
+}
+
+/* content divs */
+
+.content {
+    background-color: var(--neutral-dark-blue);
+    margin: 15px;
+    padding: 40px;
+    z-index: 2;
+}
+
+/* left content div */
+.content:first-of-type {
+    border-radius: 10px 100px 10px 10px;
+    height: 120px;
+    width: 270px;
+}
+
+#options > div:first-child {
+    width: 177px;
+}
+
+#options > div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    width: 177px;
+}
+
+.icon {
+    border-radius: 10px;
+    background-color: var(--neutral-very-dark-blue);
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* right content div */
+.content:last-of-type {
+    border-radius: 10px;
+    height: 75px;
+    width: 460px;
+    position: relative;
+}
+
+.content:last-of-type > div:last-of-type {
+    height: 100%;
+    position: relative;
+}
+
+.content:last-of-type > div:last-of-type > p:first-of-type {
+    margin-bottom: 15px;
+}
+
+#storage-bar {
+    border-radius: 25px;
+    padding: 3px;    
+    position: relative;
+    height: 1em;
+}
+
+#storage-bar::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: var(--neutral-very-dark-blue);
+    opacity: .5;
+    width: 100%;
+    height: 1em;
+    border-radius: 25px;
+    padding: 3px; 
+}
+
+#storage-bar div {
+    background-image: var(--primary-gradient);
+    height: 1em;
+    border-radius: 25px;
+    width: calc( ((var(--used-percent))/var(--available)) * 100);
+    position: relative;
+    z-index: 4;
+}
+
+#storage .flex-row {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#storage-remaining {
+    position: absolute;
+    top: -35px;
+    right: 40px;
+    background-color: white;
+    color: var(--neutral-grayish-blue);
+    border: 1px solid var(--neutral-very-dark-blue);
+    border-radius: 10px 10px 0 10px;
+    width: 130px;
+    height: 70px;
+    padding: 0 25px 0 25px;
+    text-align: center;
+    
+}
+
+#storage-remaining p {
+    margin-top: 25px;
+}
+
+#storage-remaining span {
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+.s1 {
+    font-size: 2em;
+}
+
+.s2 {
+    font-size: 2.5em;
+}
+
+.s3 {
+    font-size: 2.5em;
+    bottom: -10px;
+}
+
+/* #storage-remaining span:last-of-type {
+    margin-right: 5px;
+} */
+
+#storage-remaining::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid var(--neutral-very-dark-blue);
+    border-top: 10px solid var(--neutral-very-dark-blue);
+    border-bottom: 10px solid transparent;
+    right: 0px;
+    top: 70px;
+}
+
+#storage-remaining::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    right: 0px;
+    top: 70px;
+}
