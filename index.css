@@ -217,3 +217,145 @@ body {
     right: 0px;
     top: 70px;
 }
+
+/* tablet */
+@media only screen and (max-width: 850px) {
+    body {
+        background-image: url(./images/bg-mobile.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #bg-image {
+        display: none;
+    }
+
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 125px;
+    }
+
+    .content {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+
+    .content:first-of-type {
+        width: 300px;
+        margin-top: 100px;
+        padding: 40px;
+    }
+
+    .content:last-of-type {
+        width: 320px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #storage-remaining::before {
+        display: none;
+    }
+
+    #storage-remaining::after {
+        display: none;
+    }
+
+    #storage-remaining {
+        border-radius: 10px;
+        top: 125px;
+        left: 99px;
+    }
+
+    .content:last-of-type > div:last-of-type {
+        text-align: center;
+    }
+
+    #storage-bar {
+        width: 254px;    
+    }
+    
+    #storage-bar::after {
+        width: 254px;
+    }
+
+    #storage .flex-row {
+        font-weight: 700;
+    }
+  }
+
+  /* mobile */
+  @media only screen and (max-width: 500px) {
+    body {
+        background-image: url(./images/bg-mobile.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #bg-image {
+        display: none;
+    }
+
+    #content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 125px;
+    }
+
+    .content {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+
+    .content:first-of-type {
+        width: 265px;
+        margin-top: 100px;
+        padding: 40px;
+    }
+
+    .content:last-of-type {
+        width: 285px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #storage-remaining::before {
+        display: none;
+    }
+
+    #storage-remaining::after {
+        display: none;
+    }
+
+    #storage-remaining {
+        border-radius: 10px;
+        top: 125px;
+        left: 72px;
+    }
+
+    .content:last-of-type > div:last-of-type {
+        text-align: center;
+    }
+
+    #storage-bar {
+        width: 254px;    
+    }
+    
+    #storage-bar::after {
+        width: 254px;
+    }
+
+    #storage .flex-row {
+        font-weight: 700;
+    }
+  }
