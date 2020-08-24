@@ -32,12 +32,12 @@ The site can be viewed [here](https://fylo-data-challenge-one.vercel.app/)
 
 ## Design Comparison
 
-<img alt="" data-testid="right-image" src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Challenges/uja7och1qxswpbietazs.jpg">
+Solution
 
 
 <img alt="" data-testid="left-image" src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Screenshots/hwq8fdltu7qt4p6v7dzf.jpg">
 
-<!-- <img alt="" data-testid="right-image" src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Challenges/uja7och1qxswpbietazs.jpg" style="clip: rect(auto, auto, auto, 784.5px); display: block; height: 100%; object-fit: cover; position: absolute; width: 100%;">
+Design Mockup
 
 
-<img alt="" data-testid="left-image" src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Screenshots/hwq8fdltu7qt4p6v7dzf.jpg" style="clip: rect(auto, 784.5px, auto, auto); display: block; height: 100%; object-fit: cover; position: absolute; width: 100%;"> -->
+<img alt="" data-testid="right-image" src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_900/Challenges/uja7och1qxswpbietazs.jpg">
