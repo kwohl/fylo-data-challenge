@@ -108,7 +108,7 @@ body {
 }
 
 .content:last-of-type > div:last-of-type > p:first-of-type {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .content:last-of-type > div:last-of-type span {
@@ -157,13 +157,14 @@ body {
 
 #storage .flex-row {
     justify-content: space-between;
+    font-size: 12px;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 #storage-remaining {
     position: absolute;
-    top: -35px;
+    top: -45px;
     right: 40px;
     background-color: white;
     color: var(--neutral-grayish-blue);
@@ -184,6 +185,7 @@ body {
     align-items: center;
     display: flex;
     font-weight: 700;
+    font-size: 12px;
 }
 
 #storage-remaining span {
